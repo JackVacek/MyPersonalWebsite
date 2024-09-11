@@ -63,7 +63,17 @@
     width: 25px;
 }
 
+.japan{
+    position: absolute;
+    left: 0;
+    width: 25px;
+}
+
 .colorMode:hover{
+    cursor: pointer;
+}
+
+.japan:hover{
     cursor: pointer;
 }
 

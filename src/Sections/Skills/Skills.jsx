@@ -1,11 +1,23 @@
 import styles from "./SkillsStyles.module.css";
 import checkMarkIcon from "../../assets/icons8-checkmark.svg";
 import SkillList from "../../common/SkillList";
+import { useTheme } from "../../common/ThemeContext.jsx";
 
 function Skills() {
+  const { language } = useTheme();
+
+  const languages = {
+    en: {
+      title: "Skills",
+    },
+    ja: {
+      title: "スキル",
+    },
+  };
+
   return (
     <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Skills</h1>
+      <h1 className="sectionTitle">{languages[language].title}</h1>
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="HTML" />
         <SkillList src={checkMarkIcon} skill="CSS" />
