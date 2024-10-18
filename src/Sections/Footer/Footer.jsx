@@ -6,22 +6,16 @@ function Footer() {
 
   const languages = {
     en: {
-      copy: "©2024 Jack Vacek.",
-      rights: "All rights reserved.",
+      copy: "2024 Jack Vacek.",
     },
     ja: {
-      copy: "©2024 ジャック・ヴァチェック。",
-      rights: "全著作権保有。",
+      copy: "2024 ジャック・ヴァチェック。",
     },
   };
 
   return (
     <section id="footer" className={styles.container}>
-      <p>
-        {languages[language].copy}
-        <br />
-        {languages[language].rights}
-      </p>
+      <p>{languages[language].copy}</p>
     </section>
   );
 }
