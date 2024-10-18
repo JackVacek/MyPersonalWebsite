@@ -6,7 +6,7 @@ function Footer() {
 
   const languages = {
     en: {
-      copy: "&copy;2024 Jack Vacek.",
+      copy: "©2024 Jack Vacek.",
       rights: "All rights reserved.",
     },
     ja: {
