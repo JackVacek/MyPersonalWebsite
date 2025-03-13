@@ -6,10 +6,10 @@ function Footer() {
 
   const languages = {
     en: {
-      copy: "2024 Jack Vacek.",
+      copy: "2025 Jack Vacek.",
     },
     ja: {
-      copy: "2024 ジャック・ヴァチェック。",
+      copy: "2025 ジャック・ヴァチェック。",
     },
   };
 

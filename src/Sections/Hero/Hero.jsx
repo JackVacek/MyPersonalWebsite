@@ -10,21 +10,29 @@ import instagramDark from "../../assets/icons8-instagram-dark.png";
 import linkedinDark from "../../assets/icons8-linkedin-hollow.png";
 import githubDark from "../../assets/icons8-github-hollow.png";
 import twitterxDark from "../../assets/icons8-twitterx-hollow.png";
-import resume from "../../assets/Jack_Vacek_ResumeFin_2024.pdf";
+import resume from "../../assets/Vacek_Resume_2025.pdf";
 import maLight from "../../assets/icons8-hiragana-ma-filled.png";
 import maDark from "../../assets/icons8-hiragana-ma-hollow.png";
+import aLight from "../../assets/icons8-a-50.png";
+import aDark from "../../assets/icons8-a-502.png";
 import { useTheme } from "../../common/ThemeContext.jsx";
 
 function Hero() {
   const { theme, toggleTheme, language, toggleLanguage } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
-  const japanIcon = theme === "light" ? maLight : maDark;
+  const languageIcon =
+    theme === "light"
+      ? language === "en"
+        ? maLight
+        : aLight
+      : language === "en"
+      ? maDark
+      : aDark;
   const twitterxIcon = theme === "light" ? twitterxLight : twitterxDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const instagramIcon = theme === "light" ? instagramLight : instagramDark;
-
   const languages = {
     en: {
       first: "Jack",
@@ -32,7 +40,7 @@ function Hero() {
       major: "Honors Computer Science Major",
       college: "Texas A&M University",
       description:
-        "With a passion for problem solving, algorithmic design, and machine learning.",
+        "With a passion for competitive programming, web development, and machine learning.",
       resume: "Resume",
     },
     ja: {
@@ -40,7 +48,8 @@ function Hero() {
       last: "ヴァチェック",
       major: "コンピュータサイエンス専攻の優秀学生",
       college: "テキサスA&M大学",
-      description: "問題解決やアルゴリズム設計や機械学習に情熱を持っています。",
+      description:
+        "競技プログラミング、ウェブ開発、機械学習に情熱を持っています。",
       resume: "履歴書",
     },
   };
@@ -61,7 +70,7 @@ function Hero() {
         />
         <img
           className={styles.japan}
-          src={japanIcon}
+          src={languageIcon}
           alt="Japanese Icon"
           onClick={toggleLanguage}
         />
