@@ -102,7 +102,7 @@ function Hero() {
           </a>
         </span>
         <p>{languages[language].description}</p>
-        <a href={resume} download>
+        <a href={resume} target="_blank">
           <button className="hover">{languages[language].resume}</button>
         </a>
       </div>
