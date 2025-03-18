@@ -52,7 +52,7 @@ function Projects() {
         />
         <ProjectCard
           src={styndr}
-          link=""
+          link="https://styndr.com"
           h3={languages[language].Styndr}
           p={languages[language].StyndrDescription}
         />
