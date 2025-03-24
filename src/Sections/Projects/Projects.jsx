@@ -5,7 +5,7 @@ import styndr from "../../assets/styndr.png";
 import infoStealerPic from "../../assets/infoStealer.png";
 import infoStealerInfo from "../../assets/infoStealer.pdf";
 import medAI from "../../assets/MedAI.png";
-//import medAIInfo from "../../assets/MedAI.pdf";
+import medAIInfo from "../../assets/MedAI.pdf";
 import ProjectCard from "../../common/ProjectCard";
 import { useTheme } from "../../common/ThemeContext.jsx";
 
@@ -70,7 +70,7 @@ function Projects() {
         />
         <ProjectCard
           src={medAI}
-          link={""}
+          link={medAIInfo}
           h3={languages[language].medAI}
           p={languages[language].medAIDescription}
         />
